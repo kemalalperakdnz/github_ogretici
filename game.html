@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Quiz - Bilgi Yarışması</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fab fa-github"></i>
+                <h1>GitHub Öğreticisi</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html#giris">Giriş</a></li>
+                    <li><a href="index.html#nedir">GitHub Nedir?</a></li>
+                    <li><a href="index.html#neden">Neden GitHub?</a></li>
+                    <li><a href="index.html#baslarken">Başlarken</a></li>
+                    <li><a href="index.html#temel-komutlar">Temel Komutlar</a></li>
+                    <li><a href="index.html#is-akisi">İş Akışı</a></li>
+                    <li><a href="index.html#ipuclari">İpuçları</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>GitHub Bilgi Yarışması</h1>
+                <p>GitHub ve Git hakkındaki bilgilerinizi test edin ve öğrenmeye devam edin</p>
+                <a href="#quiz" class="btn">Yarışmaya Başla</a>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section id="quiz" class="section quiz-section">
+            <div class="container">
+                <h2>GitHub Bilgi Yarışması</h2>
+                <p class="section-intro">GitHub ve Git hakkındaki bilgilerinizi test edin! Bu interaktif quiz ile bilgilerinizi pekiştirin ve yeni şeyler öğrenin.</p>
+                
+                <div class="quiz-container">
+                    <div class="quiz-start-screen" id="quiz-start-screen">
+                        <h3>GitHub Bilgi Yarışması</h3>
+                        <p>10 soru ile GitHub ve Git bilginizi test edin!</p>
+                        <button class="btn" id="start-quiz-btn">Yarışmaya Başla</button>
+                    </div>
+                    
+                    <div class="quiz-question-screen" id="quiz-question-screen">
+                        <div class="quiz-header">
+                            <div class="quiz-progress">
+                                <div class="quiz-progress-bar" id="quiz-progress-bar"></div>
+                            </div>
+                            <div class="quiz-info">
+                                <span class="quiz-question-number">Soru <span id="current-question">1</span>/<span id="total-questions">10</span></span>
+                                <span class="quiz-score">Puan: <span id="current-score">0</span></span>
+                            </div>
+                        </div>
+                        
+                        <div class="quiz-content">
+                            <h3 id="question-text">Soru metni burada görünecek?</h3>
+                            
+                            <div class="quiz-options" id="quiz-options">
+                                <!-- Options will be added dynamically -->
+                            </div>
+                        </div>
+                        
+                        <div class="quiz-feedback" id="quiz-feedback">
+                            <div class="feedback-content">
+                                <div class="feedback-icon correct"><i class="fas fa-check-circle"></i></div>
+                                <div class="feedback-icon wrong"><i class="fas fa-times-circle"></i></div>
+                                <p id="feedback-text"></p>
+                            </div>
+                            <button class="btn" id="next-question-btn">Sonraki Soru</button>
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-result-screen" id="quiz-result-screen">
+                        <div class="result-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3>Quiz Tamamlandı!</h3>
+                        <p>Toplam puanınız: <span id="final-score">0</span>/100</p>
+                        <div class="result-message" id="result-message"></div>
+                        <div class="result-actions">
+                            <button class="btn" id="restart-quiz-btn">Tekrar Dene</button>
+                            <button class="btn btn-secondary" id="share-result-btn"><i class="fas fa-share-alt"></i> Sonucu Paylaş</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-columns">
+                    <div class="footer-column">
+                        <h3>GitHub Öğreticisi</h3>
+                        <p>GitHub ve Git hakkında kapsamlı bilgiler ve öğreticiler sunan bir platform.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Hızlı Bağlantılar</h3>
+                        <ul>
+                            <li><a href="index.html#giris">Giriş</a></li>
+                            <li><a href="index.html#nedir">GitHub Nedir?</a></li>
+                            <li><a href="index.html#baslarken">Başlarken</a></li>
+                            <li><a href="index.html#temel-komutlar">Temel Komutlar</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Faydalı Kaynaklar</h3>
+                        <ul>
+                            <li><a href="https://docs.github.com" target="_blank">GitHub Dokümantasyonu</a></li>
+                            <li><a href="https://git-scm.com/doc" target="_blank">Git Dokümantasyonu</a></li>
+                            <li><a href="https://github.com/features" target="_blank">GitHub Özellikleri</a></li>
+                            <li><a href="https://github.com/topics" target="_blank">Popüler Konular</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 GitHub Öğreticisi. Tüm hakları saklıdır.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

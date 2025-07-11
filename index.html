@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Öğreticisi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fab fa-github"></i>
+                <h1>GitHub Öğreticisi</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#giris">Giriş</a></li>
+                    <li><a href="#nedir">GitHub Nedir?</a></li>
+                    <li><a href="#neden">Neden GitHub?</a></li>
+                    <li><a href="#baslarken">Başlarken</a></li>
+                    <li><a href="#temel-komutlar">Temel Komutlar</a></li>
+                    <li><a href="#is-akisi">İş Akışı</a></li>
+                    <li><a href="#ipuclari">İpuçları</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>GitHub Platformunu Keşfedin</h1>
+                <p>Dünyanın en büyük kod yönetimi ve işbirliği platformu ile projelerinizi geliştirin</p>
+                <a href="#baslarken" class="btn">Hemen Başlayın</a>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section id="giris" class="section">
+            <div class="container">
+                <h2>GitHub ile Kod Yönetimi</h2>
+                <p>GitHub, yazılım geliştirme ve kod yönetimi için web tabanlı bir platformdur. Geliştiricilere kodlarını depolamak, değişiklikleri izlemek, projelerini yönetmek ve işbirliği yapmak için güçlü araçlar sunar. Açık kaynak projelerin merkezi haline gelmiş bu platform, modern yazılım geliştirme süreçlerinin vazgeçilmez bir parçasıdır.</p>
+            </div>
+        </section>
+
+        <section id="nedir" class="section">
+            <div class="container">
+                <h2>GitHub Nedir?</h2>
+                <h3>GitHub'ın Tanımı ve Tarihi</h3>
+                <p>GitHub, 2008 yılında Tom Preston-Werner, Chris Wanstrath ve PJ Hyett tarafından kurulmuş, Git versiyon kontrol sistemini temel alan bir kod barındırma platformudur. 2018 yılında Microsoft tarafından 7.5 milyar dolara satın alınmıştır.</p>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>2008</h4>
+                            <p>GitHub'ın Kuruluşu</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>2011</h4>
+                            <p>1 Milyon Kullanıcı</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>2018</h4>
+                            <p>Microsoft Tarafından Satın Alınma</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>2020</h4>
+                            <p>GitHub Actions ve GitHub Packages Lansmanı</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="neden" class="section">
+            <div class="container">
+                <h2>Neden GitHub Kullanmalıyız?</h2>
+                <div class="features">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-history"></i>
+                        </div>
+                        <h3>Versiyon Geçmişi</h3>
+                        <p>GitHub, projenizin tüm geçmişini saklar. Her değişiklik, kim tarafından ne zaman yapıldığı bilgisiyle birlikte kaydedilir. Bu sayede herhangi bir zamandaki projenizin durumuna geri dönebilirsiniz.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>İşbirliği</h3>
+                        <p>Birden fazla geliştirici aynı projede çalışırken, GitHub çakışmaları (conflict) yönetmeyi ve değişiklikleri birleştirmeyi kolaylaştırır. Ekip üyeleri aynı anda farklı özellikler üzerinde çalışabilir.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <h3>Dallanma Kolaylığı</h3>
+                        <p>GitHub'ın güçlü dallanma mekanizması, yeni özellikleri ana koddan izole bir şekilde geliştirmenize olanak tanır. Bu, stabil bir ana kod tabanını korurken yeni özellikler eklemeyi mümkün kılar.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h3>Merkezi Depolama</h3>
+                        <p>Kodunuz güvenli bir şekilde bulutta saklanır, böylece yerel bilgisayarınızda veri kaybı yaşasanız bile projeniz güvende kalır.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Veri Bütünlüğü</h3>
+                        <p>GitHub, her commit'in benzersiz bir hash değeriyle tanımlanmasını sağlayarak, projenizin bütünlüğünü korur. Bu, herhangi bir değişikliğin fark edilmeden yapılmasını imkansız hale getirir.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <h3>Performans</h3>
+                        <p>GitHub, büyük projeler ve binlerce dal (branch) ile bile hızlı çalışacak şekilde tasarlanmıştır. Çoğu işlem yerel olarak gerçekleştiği için ağ gecikmesi yaşanmaz.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="baslarken" class="section">
+            <div class="container">
+                <h2>GitHub ile Başlarken</h2>
+                <p class="section-intro">GitHub'da yolculuğunuza başlamak için izlemeniz gereken adımlar aşağıdadır. Bu basit adımları takip ederek kısa sürede projelerinizi GitHub'da yönetmeye başlayabilirsiniz.</p>
+                
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-icon">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                        <h3>GitHub Hesabı Oluşturun</h3>
+                        <p><a href="https://github.com/join" target="_blank" class="link-with-icon">github.com <i class="fas fa-external-link-alt"></i></a> adresine gidin ve yeni bir hesap oluşturun. E-posta adresinizi doğrulayın ve güçlü bir şifre belirleyin.</p>
+                        <a href="https://github.com/join" target="_blank" class="step-link">Hesap Oluştur <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-icon">
+                            <i class="fas fa-download"></i>
+                        </div>
+                        <h3>GitHub Desktop'u Yükleyin</h3>
+                        <p>GitHub'la etkileşime geçmek için <a href="https://desktop.github.com/" target="_blank" class="link-with-icon">GitHub Desktop <i class="fas fa-external-link-alt"></i></a> uygulamamasını indirip yükleyin. Bu kullanıcı dostu arayüz, komut satırı kullanmadan GitHub'la çalışmanızı sağlar.</p>
+                        <a href="https://desktop.github.com/" target="_blank" class="step-link">GitHub Desktop İndir <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-icon">
+                            <i class="fas fa-plus-circle"></i>
+                        </div>
+                        <h3>İlk Repository'nizi Oluşturun</h3>
+                        <p>GitHub hesabınıza giriş yapın ve sağ üst köşedeki + simgesine tıklayarak "New repository" seçeneğini seçin. Repository'nize bir isim verin ve istediğiniz ayarları yapın.</p>
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span class="code-title">Repository Oluşturma</span>
+                            </div>
+                            <pre><code>1. Repository adını girin ("my-first-repo")
+2. Kısa bir açıklama ekleyin
+3. Public veya Private seçeneğini belirleyin
+4. "Initialize with a README" seçeneğini işaretleyin
+5. "Create repository" butonuna tıklayın</code></pre>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-icon">
+                            <i class="fas fa-clone"></i>
+                        </div>
+                        <h3>Repository'nizi Klonlayın</h3>
+                        <p>GitHub Desktop uygulamasını açın ve oluşturduğunuz repository'yi yerel bilgisayarınıza klonlayın. Bu işlem, repository'nin bir kopyasını bilgisayarınıza indirecektir.</p>
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span class="code-title">GitHub Desktop ile Klonlama</span>
+                            </div>
+                            <pre><code>1. GitHub Desktop'ta "File > Clone repository" seçeneğine tıklayın
+2. GitHub.com sekmesinden repository'nizi seçin
+3. Yerel bir klasör belirleyin
+4. "Clone" butonuna tıklayın</code></pre>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">5</div>
+                        <div class="step-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Değişiklikler Yapın ve Commit Edin</h3>
+                        <p>Yerel klasörünüzde dosyalarınızı düzenleyin veya yeni dosyalar ekleyin. Sonra GitHub Desktop'a dönün, değişikliklerinizi gözden geçirin ve bir commit mesajı yazarak kaydedin.</p>
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span class="code-title">Commit ve Push İşlemi</span>
+                            </div>
+                            <pre><code>1. Değişikliklerinizi gözden geçirin
+2. Commit mesajını yazın ("Add new features")
+3. "Commit to main" butonuna tıklayın
+4. "Push origin" butonuna tıklayarak değişikliklerinizi GitHub'a gönderin</code></pre>
+                        </div>
+                        <div class="step-tip">
+                            <i class="fas fa-lightbulb"></i>
+                            <p>Commit mesajlarınızı açıklayıcı ve anlaşılır yazın. Bu, projenizin geçmişini takip etmeyi kolaylaştırır.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section-cta">
+                    <h3>Hazır mısınız?</h3>
+                    <p>Bu adımları tamamladıktan sonra, GitHub'da projelerinizi yönetmeye başlayabilirsiniz. Şimdi GitHub'la kod yolculuğunuza başlayın!</p>
+                    <a href="https://github.com/join" target="_blank" class="btn">GitHub'a Kayıt Ol <i class="fas fa-rocket"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="temel-komutlar" class="section">
+            <div class="container">
+                <h2>GitHub'da Kod Yönetimi</h2>
+                <div class="commands">
+                    <div class="command">
+                        <h3>Repository Oluşturma</h3>
+                        <p>GitHub'da yeni bir repository (depo) oluşturmak, projelerinizi yönetmenin ilk adımıdır. GitHub web arayüzünden kolayca yeni bir repository oluşturabilirsiniz.</p>
+                        <div class="code-block">
+                            <pre><code>1. GitHub'da sağ üst köşedeki + simgesine tıklayın
+2. "New repository" seçeneğini seçin
+3. Repository adı ve açıklaması girin
+4. Visibility seçeneğini belirleyin (Public/Private)
+5. "Create repository" butonuna tıklayın</code></pre>
+                        </div>
+                    </div>
+                    <div class="command">
+                        <h3>Repository Klonlama</h3>
+                        <p>GitHub'daki bir repository'yi yerel bilgisayarınıza kopyalamak için klonlama işlemi yapabilirsiniz.</p>
+                        <div class="code-block">
+                            <pre><code>$ git clone https://github.com/kullanici/depo.git
+Cloning into 'depo'...</code></pre>
+                        </div>
+                    </div>
+                    <div class="command">
+                        <h3>Değişiklikleri Hazırlama</h3>
+                        <p>Dosyalarda yaptığınız değişiklikleri GitHub'a göndermek için önce hazırlama alanına eklemeniz gerekir.</p>
+                        <div class="code-block">
+                            <pre><code>$ git add dosya.txt
+$ git add .  # Tüm değişiklikleri ekler</code></pre>
+                        </div>
+                    </div>
+                    <div class="command">
+                        <h3>Değişiklikleri Kaydetme</h3>
+                        <p>Hazırlama alanındaki değişiklikleri bir commit ile kaydetmeniz gerekir. Her commit, projenizin bir anlık görüntüsünü oluşturur.</p>
+                        <div class="code-block">
+                            <pre><code>$ git commit -m "İlk commit"
+[main f7d2e3a] İlk commit
+1 file changed, 10 insertions(+)</code></pre>
+                        </div>
+                    </div>
+                    <div class="command">
+                        <h3>Durum Kontrolü</h3>
+                        <p>Çalışma dizininizdeki değişikliklerin durumunu kontrol etmek için status komutunu kullanabilirsiniz.</p>
+                        <div class="code-block">
+                            <pre><code>$ git status
+On branch main
+Changes to be committed:
+  modified: index.html
+Changes not staged for commit:
+  modified: style.css</code></pre>
+                        </div>
+                    </div>
+                    <div class="command">
+                        <h3>GitHub'a Yükleme</h3>
+                        <p>Yerel değişikliklerinizi GitHub'daki repository'nize göndermek için push komutunu kullanabilirsiniz.</p>
+                        <div class="code-block">
+                            <pre><code>$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 353 bytes, done.
+To https://github.com/kullanici/depo.git
+  a1b2c3d..f7d2e3a  main -> main</code></pre>
+                        </div>
+                    </div>
+                    <div class="command">
+                        <h3>GitHub'dan Güncelleme Alma</h3>
+                        <p>GitHub'daki repository'nizde yapılan değişiklikleri yerel kopyanıza almak için pull komutunu kullanabilirsiniz.</p>
+                        <div class="code-block">
+                            <pre><code>$ git pull origin main
+From https://github.com/kullanici/depo
+ * branch            main       -> FETCH_HEAD
+Updating a1b2c3d..e5f6g7h
+Fast-forward
+ README.md | 5 +++++
+ 1 file changed, 5 insertions(+)</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="is-akisi" class="section">
+            <div class="container">
+                <h2>GitHub İş Akışı ve İşbirliği</h2>
+                <div class="workflow">
+                    <div class="workflow-item">
+                        <div class="workflow-icon">
+                            <i class="fas fa-edit"></i>
+                        </div>
+                        <h3>1. Değişiklikler Yapın</h3>
+                        <p>Projenizde gerekli değişiklikleri yapın. Yeni dosyalar ekleyin, mevcut dosyaları düzenleyin veya silin.</p>
+                    </div>
+                    <div class="workflow-item">
+                        <div class="workflow-icon">
+                            <i class="fas fa-plus-circle"></i>
+                        </div>
+                        <h3>2. Değişiklikleri Ekleyin</h3>
+                        <p>Yaptığınız değişiklikleri hazırlama alanına ekleyin:</p>
+                        <div class="code-block">
+                            <pre><code>git add .</code></pre>
+                        </div>
+                    </div>
+                    <div class="workflow-item">
+                        <div class="workflow-icon">
+                            <i class="fas fa-save"></i>
+                        </div>
+                        <h3>3. Commit Edin</h3>
+                        <p>Değişikliklerinizi anlamlı bir mesajla commit edin:</p>
+                        <div class="code-block">
+                            <pre><code>git commit -m "Açıklayıcı commit mesajı"</code></pre>
+                        </div>
+                    </div>
+                    <div class="workflow-item">
+                        <div class="workflow-icon">
+                            <i class="fas fa-upload"></i>
+                        </div>
+                        <h3>4. Push Edin</h3>
+                        <p>Değişikliklerinizi GitHub'daki uzak depoya gönderin:</p>
+                        <div class="code-block">
+                            <pre><code>git push origin main</code></pre>
+                        </div>
+                    </div>
+                    <div class="workflow-item">
+                        <div class="workflow-icon">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <h3>5. Pull Request Oluşturun</h3>
+                        <p>Değişikliklerinizi ana projeye birleştirmek için GitHub üzerinden bir Pull Request oluşturun. Bu, kodunuzun incelenmesini ve tartışılmasını sağlar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ipuclari" class="section">
+            <div class="container">
+                <h2>GitHub'da Verimlilik İpuçları</h2>
+                <div class="tips">
+                    <div class="tip">
+                        <div class="tip-icon">
+                            <i class="fas fa-comment"></i>
+                        </div>
+                        <h3>Anlamlı Commit Mesajları Yazın</h3>
+                        <p>Her commit mesajı, yapılan değişikliği açıkça anlatmalıdır. "Düzeltme" yerine "Navigasyon menüsündeki bozuk bağlantı düzeltildi" gibi açıklayıcı mesajlar kullanın.</p>
+                    </div>
+                    <div class="tip">
+                        <div class="tip-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Sık Sık Commit Yapın</h3>
+                        <p>Büyük değişiklikler yerine, küçük ve anlamlı değişikliklerle sık sık commit yapın. Bu, hata ayıklamayı kolaylaştırır ve geçmişi daha anlaşılır hale getirir.</p>
+                    </div>
+                    <div class="tip">
+                        <div class="tip-icon">
+                            <i class="fas fa-eye-slash"></i>
+                        </div>
+                        <h3>.gitignore Dosyası Kullanın</h3>
+                        <p>GitHub repository'nize eklenmemesi gereken dosyaları belirlemek için .gitignore dosyası oluşturun. GitHub, farklı programlama dilleri için hazır şablonlar sunar.</p>
+                    </div>
+                    <div class="tip">
+                        <div class="tip-icon">
+                            <i class="fas fa-tag"></i>
+                        </div>
+                        <h3>Sürümleri Etiketleyin</h3>
+                        <p>Önemli dağıtımlar için git tag komutunu kullanarak sürüm etiketleri oluşturun. Bu, belirli bir sürüme kolayca erişmenizi sağlar.</p>
+                    </div>
+                    <div class="tip">
+                        <div class="tip-icon">
+                            <i class="fas fa-sitemap"></i>
+                        </div>
+                        <h3>GitHub Flow'u Benimseyin</h3>
+                        <p>GitHub'ın önerdiği iş akışı modelini (GitHub Flow) benimseyin. Bu model, branch'ler, pull request'ler ve merge işlemleri için basit ve etkili bir yaklaşım sunar.</p>
+                    </div>
+                    <div class="tip">
+                        <div class="tip-icon">
+                            <i class="fas fa-history"></i>
+                        </div>
+                        <h3>GitHub Actions Kullanın</h3>
+                        <p>GitHub Actions ile CI/CD süreçlerinizi otomatikleştirin. Kod testleri, derleme ve dağıtım işlemlerini otomatik olarak gerçekleştirerek geliştirme sürecinizi hızlandırın.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-columns">
+                    <div class="footer-column">
+                        <h3>Temel Bilgiler</h3>
+                        <ul>
+                            <li><a href="#giris">Giriş</a></li>
+                            <li><a href="#nedir">GitHub Nedir</a></li>
+                            <li><a href="#neden">Neden GitHub</a></li>
+                            <li><a href="#temel-komutlar">Temel Komutlar</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Gelişmiş Konular</h3>
+                        <ul>
+                            <li><a href="#is-akisi">İş Akışı</a></li>
+                            <li><a href="#ipuclari">İpuçları</a></li>
+                            <li><a href="#baslarken">Başlarken</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Kaynaklar</h3>
+                        <ul>
+                            <li><a href="https://github.com" target="_blank">GitHub</a></li>
+                            <li><a href="https://git-scm.com/doc" target="_blank">Resmi Dokümantasyon</a></li>
+                            <li><a href="https://gitlab.com" target="_blank">GitLab</a></li>
+                            <li><a href="https://bitbucket.org" target="_blank">Bitbucket</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <div class="footer-logo">
+                            <i class="fab fa-github"></i>
+                            <h3>GitHub Öğreticisi</h3>
+                        </div>
+                        <p>Modern yazılım geliştirmenin merkezi olan GitHub hakkında kapsamlı bir rehber. Kod yönetimi, işbirliği ve proje geliştirme hakkında her şey.</p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>© 2025 GitHub Öğreticisi | Tüm hakları saklıdır</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="game.html" class="game-button" title="GitHub Oyunu Oyna">
+        <i class="fas fa-gamepad"></i>
+    </a>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
